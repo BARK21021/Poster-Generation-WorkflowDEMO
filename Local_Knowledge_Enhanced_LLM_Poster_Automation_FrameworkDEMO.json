@@ -1,0 +1,2165 @@
+{
+  "3": {
+    "inputs": {
+      "text": [
+        "7",
+        0
+      ]
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍 X"
+    }
+  },
+  "6": {
+    "inputs": {
+      "text": [
+        "8",
+        0
+      ]
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍 Y"
+    }
+  },
+  "7": {
+    "inputs": {
+      "system_prompt": "根据内容分析，只输出安全的x轴的一个整数！例如：40等，不要markdown格式",
+      "user_prompt": [
+        "9",
+        0
+      ],
+      "temperature": 0,
+      "is_memory": "disable",
+      "is_tools_in_sys_prompt": "enable",
+      "is_locked": "disable",
+      "main_brain": "disable",
+      "max_length": 3072,
+      "imgbb_api_key": "",
+      "conversation_rounds": 1,
+      "historical_record": "",
+      "is_enable": true,
+      "model": [
+        "106",
+        0
+      ]
+    },
+    "class_type": "LLM",
+    "_meta": {
+      "title": "☁️API LLM通用链路-下游X"
+    }
+  },
+  "8": {
+    "inputs": {
+      "system_prompt": "根据内容分析，只输出安全的y轴的一个整数！例如：40等，不要markdown格式",
+      "user_prompt": [
+        "9",
+        0
+      ],
+      "temperature": 0,
+      "is_memory": "disable",
+      "is_tools_in_sys_prompt": "enable",
+      "is_locked": "disable",
+      "main_brain": "enable",
+      "max_length": 3072,
+      "imgbb_api_key": "",
+      "conversation_rounds": 1,
+      "historical_record": "",
+      "is_enable": true,
+      "model": [
+        "90",
+        0
+      ]
+    },
+    "class_type": "LLM",
+    "_meta": {
+      "title": "☁️API LLM通用链路-下游Y"
+    }
+  },
+  "9": {
+    "inputs": {
+      "system_prompt": [
+        "180",
+        0
+      ],
+      "user_prompt": [
+        "33",
+        0
+      ],
+      "temperature": 0.5,
+      "is_memory": "disable",
+      "is_tools_in_sys_prompt": "disable",
+      "is_locked": "disable",
+      "main_brain": "enable",
+      "max_length": 5120,
+      "imgbb_api_key": "",
+      "conversation_rounds": 1,
+      "historical_record": "",
+      "is_enable": true,
+      "model": [
+        "282",
+        0
+      ],
+      "images": [
+        "69",
+        0
+      ]
+    },
+    "class_type": "LLM",
+    "_meta": {
+      "title": "☁️API LLM通用链路- 文字坐标下游"
+    }
+  },
+  "11": {
+    "inputs": {
+      "text": [
+        "9",
+        0
+      ]
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
+    }
+  },
+  "12": {
+    "inputs": {
+      "string": "",
+      "regex_pattern": ".*?</think>",
+      "replace": "",
+      "case_insensitive": true,
+      "multiline": false,
+      "dotall": true,
+      "count": 1
+    },
+    "class_type": "RegexReplace",
+    "_meta": {
+      "title": "正则表达式替换"
+    }
+  },
+  "14": {
+    "inputs": {
+      "system_prompt": "你是一名资深艺术总监。请根据用户的需求进行综合考虑，不要markdown格式，按照以下步骤完成设计简报。\n\n第一步：需求分析 (Requirement Analysis)\n\n需求主题是什么？\n\n核心风格是什么？\n\n目标受众是谁？\n\n关键词和情绪板(Moodboard)是什么？\n\n第二步：版式决策 (Layout Decision)\n\n画布大小如何设置？（最大1024像素×1024像素）\n\n根据主题，选择一个最合适的版式模板（例如：居中聚焦版式、上下或左右构图、压角构图、对称构图）。\n\n解释你为什么这么选。\n\n第三步：色彩方案 (Color Palette)\n\n因为性能有限，只能选择一个主色，不要其他颜色。\n\n解释这个色彩方案如何传达核心情绪。\n\n第四步：字体选择 (Typography Selection)\n\n只为主标题选择一个合适的字体，不需要副标题等。\n\n目前字体支持：\nSmileySans-Oblique",
+      "user_prompt": "我需要设计一个关于海洋保护主题海报。",
+      "temperature": 0.7000000000000001,
+      "is_memory": "disable",
+      "is_tools_in_sys_prompt": "disable",
+      "is_locked": "disable",
+      "main_brain": "enable",
+      "max_length": 4096,
+      "imgbb_api_key": "",
+      "conversation_rounds": 2,
+      "historical_record": "",
+      "is_enable": true,
+      "model": [
+        "15",
+        0
+      ]
+    },
+    "class_type": "LLM",
+    "_meta": {
+      "title": "☁️API LLM通用链路-总"
+    }
+  },
+  "15": {
+    "inputs": {
+      "model_name": "qwen3:4b",
+      "base_url": "http://localhost:11434/v1",
+      "api_key": "",
+      "is_ollama": true
+    },
+    "class_type": "LLM_api_loader",
+    "_meta": {
+      "title": "API LLM加载器"
+    }
+  },
+  "17": {
+    "inputs": {
+      "text_0": "作为资深艺术总监，我基于您的需求（心理疗愈主题海报，核心意象为稻穗）进行了深度分析和设计规划。以下是我的完整设计简报，严格遵循您指定的四步流程，避免任何markdown格式，内容简洁直接：\n\n---\n\n**第一步：需求分析**  \n需求主题是“心理疗愈”与“稻穗”的隐喻结合——稻穗象征心理韧性（如在风中弯曲却不会折断，代表接纳痛苦后回归平静），而非字面稻谷。核心风格需体现**自然疗愈感**：避免工业感或激烈情绪，聚焦柔和、有机的视觉语言，强调“内在修复”的过程。目标受众是25-45岁关注心理健康的城市人群，尤其是经历压力后寻求希望的个体（例如职场人、学生群体），他们需要视觉上快速建立信任感和舒适感。关键词包括“坚韧”“平静”“微小希望”，情绪板以**温暖的平和**为主调（类似秋日田野的余晖），避免任何悲伤或焦虑的暗示——稻穗的意象要传递“弯曲是力量”的哲学，而非脆弱。\n\n**第二步：版式决策**  \n画布大小设置为1024像素×1024像素（正方形，适配移动端和社交媒体传播）。版式模板选择**居中聚焦版式**——稻穗作为视觉中心，以略微弯曲的形态自然占据画面中央区域，周围留白处理。这样能强化“心理疗愈从内心开始”的隐喻：稻穗的弧度引导视线向内收敛，避免外向的混乱构图，同时留白象征心理空间的释放。我这样选是因为稻穗的动态特性（风中轻柔倾斜）最适合居中聚焦——它既避免压角构图的刻意感（易引发紧张），又比对称构图更符合“非完美恢复”的疗愈哲学（稻穗本就自然不对称），直指受众对“真实治愈”的期待。\n\n**第三步：色彩方案**  \n主色仅选**浅米色（#F5D5A6）**。这个色彩直指核心情绪：稻穗在自然光下的真实色调（秋日田野的温暖底色），它不刺眼、无冷调干扰，能瞬间唤起安全感和内在平静。心理层面，浅米色在色觉研究中关联“稳定与治愈”（类似中医“温润”概念），避免红色（激烈）或蓝色（疏离），让稻穗的意象成为情绪的锚点——当用户看到浅米色时，会本能联想到“被自然接纳”，完美呼应“心理疗愈需温和引导”的需求。\n\n**第四步：字体选择**  \n主标题仅使用**SmileySans-Oblique**。该字体的斜体结构模拟稻穗的微小弧度，柔和的曲线传递“不强迫的治愈”理念（符合稻穗在风中自然弯曲的隐喻），同时其亲和力设计（如微笑感）能缓解受众心理压力。我选它是因为：在心理疗愈场景中，字体需避免生硬或权威感，而SmileySans-Oblique的流畅线条直接呼应“微小希望”的主题——它不喧宾夺主，却让文字成为稻穗的延伸，引导用户从视觉到心理的平静过渡。\n\n---\n\n整个设计简报严格控制在性能限制内（单主色、单字体、1024x1024画布），确保海报能快速触达目标人群的心理需求：稻穗的意象不直接说教，而是用自然语言让用户自己解读“弯曲中的力量”，这正是当代心理疗愈传播的精髓。",
+      "text": [
+        "14",
+        0
+      ]
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
+    }
+  },
+  "19": {
+    "inputs": {
+      "text": [
+        "61",
+        0
+      ],
+      "font": [
+        "55",
+        0
+      ],
+      "font_size": [
+        "52",
+        0
+      ],
+      "font_color_r": [
+        "49",
+        0
+      ],
+      "font_color_g": [
+        "48",
+        0
+      ],
+      "font_color_b": [
+        "47",
+        0
+      ],
+      "x_percent": 100,
+      "y_percent": 50.1,
+      "anchor": "center-center",
+      "image": [
+        "69",
+        0
+      ]
+    },
+    "class_type": "FL_TextOverlayNode",
+    "_meta": {
+      "title": "FL Text Overlay"
+    }
+  },
+  "24": {
+    "inputs": {
+      "images": [
+        "19",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "预览图像"
+    }
+  },
+  "28": {
+    "inputs": {
+      "system_prompt": "你是ComfyUI的CLIP分析师，总结12个积极的主体CLIP文本词，去重，无字体与文字，不赘述、无多余内容。格式示例：Best quality, masterpiece, ultra high res等。对于关键的的示例可以写成：(Best quality:1.1)。",
+      "user_prompt": [
+        "62",
+        0
+      ],
+      "temperature": 0,
+      "is_memory": "disable",
+      "is_tools_in_sys_prompt": "disable",
+      "is_locked": "disable",
+      "main_brain": "enable",
+      "max_length": 3072,
+      "imgbb_api_key": "",
+      "conversation_rounds": 1,
+      "historical_record": "",
+      "is_enable": true,
+      "model": [
+        "285",
+        0
+      ]
+    },
+    "class_type": "LLM",
+    "_meta": {
+      "title": "☁️API LLM通用链路-上游"
+    }
+  },
+  "29": {
+    "inputs": {
+      "text_0": "Best quality, masterpiece, ultra high res, soft natural light, warm golden tones, gentle rice stalks curvature, psychological resilience, inner peace, subtle hope, organic textures, peaceful atmosphere, flowing lines",
+      "text": [
+        "28",
+        0
+      ]
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
+    }
+  },
+  "33": {
+    "inputs": {
+      "system_prompt": "你是资深艺术文字总设计师，根据主题以及内容提取关于文本的模块，并进行深度分析与设计，只给出一个主标题的方案，不要别的标题！分别是字体大小（单位px），字体选择，以及RGB的参数，以及文本位置！",
+      "user_prompt": [
+        "17",
+        0
+      ],
+      "temperature": 0.8,
+      "is_memory": "disable",
+      "is_tools_in_sys_prompt": "disable",
+      "is_locked": "disable",
+      "main_brain": "enable",
+      "max_length": 4992,
+      "imgbb_api_key": "",
+      "conversation_rounds": 1,
+      "historical_record": "",
+      "is_enable": true,
+      "model": [
+        "267",
+        0
+      ]
+    },
+    "class_type": "LLM",
+    "_meta": {
+      "title": "☁️API LLM通用链路- 上游"
+    }
+  },
+  "36": {
+    "inputs": {
+      "absolute_path": "",
+      "relative_path": "海报模版.txt",
+      "is_enable": false
+    },
+    "class_type": "load_file",
+    "_meta": {
+      "title": "加载文件"
+    }
+  },
+  "37": {
+    "inputs": {
+      "system_prompt": "你是ComfyUI的文字和描边颜色适配分析师，给出R、G、B通道颜色的理由并给出合适参数，文字和描边颜色不可一样!三维分别在1到255之间即可！输出例子如：文字颜色R:50、G:50、B:50；描边颜色：R:60、G:60、B:60。",
+      "user_prompt": [
+        "33",
+        0
+      ],
+      "temperature": 0,
+      "is_memory": "disable",
+      "is_tools_in_sys_prompt": "disable",
+      "is_locked": "disable",
+      "main_brain": "enable",
+      "max_length": 4608,
+      "imgbb_api_key": "",
+      "conversation_rounds": 1,
+      "historical_record": "",
+      "is_enable": true,
+      "model": [
+        "88",
+        0
+      ]
+    },
+    "class_type": "LLM",
+    "_meta": {
+      "title": "☁️API LLM通用链路- 文字颜色下游"
+    }
+  },
+  "41": {
+    "inputs": {
+      "system_prompt": "你是ComfyUI的文字大小适配设计师，请选择合适文字font大小！单位px。仅输出一个整数且不要MarkDown格式！",
+      "user_prompt": [
+        "33",
+        0
+      ],
+      "temperature": 0,
+      "is_memory": "disable",
+      "is_tools_in_sys_prompt": "disable",
+      "is_locked": "disable",
+      "main_brain": "enable",
+      "max_length": 2048,
+      "imgbb_api_key": "",
+      "conversation_rounds": 5,
+      "historical_record": "",
+      "is_enable": true,
+      "model": [
+        "288",
+        0
+      ]
+    },
+    "class_type": "LLM",
+    "_meta": {
+      "title": "☁️API LLM通用链路- 文字大小下游"
+    }
+  },
+  "43": {
+    "inputs": {
+      "system_prompt": "根据文字颜色RGB内容，只输出一个R通道的整数参数即可！不要输出其他内容！",
+      "user_prompt": [
+        "37",
+        0
+      ],
+      "temperature": 0,
+      "is_memory": "disable",
+      "is_tools_in_sys_prompt": "enable",
+      "is_locked": "disable",
+      "main_brain": "disable",
+      "max_length": 3072,
+      "imgbb_api_key": "",
+      "conversation_rounds": 1,
+      "historical_record": "",
+      "is_enable": true,
+      "model": [
+        "99",
+        0
+      ]
+    },
+    "class_type": "LLM",
+    "_meta": {
+      "title": "☁️API LLM通用链路r-下游Y"
+    }
+  },
+  "44": {
+    "inputs": {
+      "system_prompt": "根据文字颜色RGB内容，只输出一个B通道的整数参数即可！不要输出其他内容！",
+      "user_prompt": [
+        "37",
+        0
+      ],
+      "temperature": 0,
+      "is_memory": "disable",
+      "is_tools_in_sys_prompt": "enable",
+      "is_locked": "disable",
+      "main_brain": "disable",
+      "max_length": 3072,
+      "imgbb_api_key": "",
+      "conversation_rounds": 1,
+      "historical_record": "",
+      "is_enable": true,
+      "model": [
+        "98",
+        0
+      ]
+    },
+    "class_type": "LLM",
+    "_meta": {
+      "title": "☁️API LLM通用链路b-下游Y"
+    }
+  },
+  "45": {
+    "inputs": {
+      "system_prompt": "根据文字颜色RGB内容，只输出一个G通道的整数参数即可！不要输出其他内容！",
+      "user_prompt": [
+        "37",
+        0
+      ],
+      "temperature": 0,
+      "is_memory": "disable",
+      "is_tools_in_sys_prompt": "enable",
+      "is_locked": "disable",
+      "main_brain": "disable",
+      "max_length": 3072,
+      "imgbb_api_key": "",
+      "conversation_rounds": 1,
+      "historical_record": "",
+      "is_enable": true,
+      "model": [
+        "91",
+        0
+      ]
+    },
+    "class_type": "LLM",
+    "_meta": {
+      "title": "☁️API LLM通用链路g-下游Y"
+    }
+  },
+  "46": {
+    "inputs": {
+      "text_0": "160",
+      "text": [
+        "44",
+        0
+      ]
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
+    }
+  },
+  "47": {
+    "inputs": {
+      "text": [
+        "46",
+        0
+      ]
+    },
+    "class_type": "str2int",
+    "_meta": {
+      "title": "字符串转整数B"
+    }
+  },
+  "48": {
+    "inputs": {
+      "text": [
+        "50",
+        0
+      ]
+    },
+    "class_type": "str2int",
+    "_meta": {
+      "title": "字符串转整数G"
+    }
+  },
+  "49": {
+    "inputs": {
+      "text": [
+        "51",
+        0
+      ]
+    },
+    "class_type": "str2int",
+    "_meta": {
+      "title": "字符串转整数R"
+    }
+  },
+  "50": {
+    "inputs": {
+      "text_0": "170",
+      "text": [
+        "45",
+        0
+      ]
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
+    }
+  },
+  "51": {
+    "inputs": {
+      "text_0": "190",
+      "text": [
+        "43",
+        0
+      ]
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
+    }
+  },
+  "52": {
+    "inputs": {
+      "text": [
+        "53",
+        0
+      ]
+    },
+    "class_type": "str2int",
+    "_meta": {
+      "title": "字符串转整数—文字大小"
+    }
+  },
+  "53": {
+    "inputs": {
+      "text_0": "128",
+      "text": [
+        "41",
+        0
+      ]
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
+    }
+  },
+  "55": {
+    "inputs": {
+      "key": "target_font",
+      "is_enable": true,
+      "text": [
+        "56",
+        0
+      ]
+    },
+    "class_type": "json_get_value",
+    "_meta": {
+      "title": "JSON取值🐶"
+    }
+  },
+  "56": {
+    "inputs": {
+      "value": [
+        "58",
+        0
+      ]
+    },
+    "class_type": "PrimitiveString",
+    "_meta": {
+      "title": "字符串"
+    }
+  },
+  "58": {
+    "inputs": {
+      "text_0": "{\"target_font\": \"SmileySans-Oblique\"}",
+      "text": [
+        "59",
+        0
+      ]
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
+    }
+  },
+  "59": {
+    "inputs": {
+      "system_prompt": "你是ComfyUI的文字字体资深艺术设计分析师，根据要求更改以下Json格式，选择一个字体即可。例子格式为：“{\"target_font\": \"SmileySans-Oblique\"}”。更换后只输出这段JSON即可！\n\n目前字体支持：\nSmileySans-Oblique",
+      "user_prompt": [
+        "33",
+        0
+      ],
+      "temperature": 0.30000000000000004,
+      "is_memory": "disable",
+      "is_tools_in_sys_prompt": "disable",
+      "is_locked": "disable",
+      "main_brain": "enable",
+      "max_length": 2048,
+      "imgbb_api_key": "",
+      "conversation_rounds": 1,
+      "historical_record": "",
+      "is_enable": true,
+      "model": [
+        "289",
+        0
+      ]
+    },
+    "class_type": "LLM",
+    "_meta": {
+      "title": "☁️API LLM通用链路- 文字字体下游"
+    }
+  },
+  "60": {
+    "inputs": {
+      "system_prompt": "你是ComfyUI资深艺术设计师，根据内容只写一个主题作为海报大标题！不要MarkDown格式以及其他的说明！\n\n格式例子(中文与英文)：\n\n和合共生\nHARMONIOUS COEXISTENCE AND\nCOLLABORATIVE INTEGRATION",
+      "user_prompt": [
+        "33",
+        0
+      ],
+      "temperature": 0,
+      "is_memory": "disable",
+      "is_tools_in_sys_prompt": "disable",
+      "is_locked": "disable",
+      "main_brain": "enable",
+      "max_length": 3072,
+      "imgbb_api_key": "",
+      "conversation_rounds": 1,
+      "historical_record": "",
+      "is_enable": true,
+      "model": [
+        "85",
+        0
+      ]
+    },
+    "class_type": "LLM",
+    "_meta": {
+      "title": "☁️API LLM通用链路- 文本内容下游"
+    }
+  },
+  "61": {
+    "inputs": {
+      "text_0": "金穗生辉  \nGOLDEN HUSK RISES BRILLIANTLY",
+      "text": [
+        "60",
+        0
+      ]
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
+    }
+  },
+  "62": {
+    "inputs": {
+      "system_prompt": "你是ComfyUI资深艺术图像总设计师。总结所需的设计美感和画布分辨率，最大分辨率支持1024×1024。设计元素，输出约18个符合要求的积极英文CLIP提示词并给出理由。格式：Best quality, masterpiece, ultra high res等和需求分辨率大小。",
+      "user_prompt": [
+        "17",
+        0
+      ],
+      "temperature": 0.7000000000000001,
+      "is_memory": "disable",
+      "is_tools_in_sys_prompt": "disable",
+      "is_locked": "disable",
+      "main_brain": "enable",
+      "max_length": 4224,
+      "imgbb_api_key": "",
+      "conversation_rounds": 5,
+      "historical_record": "",
+      "is_enable": true,
+      "model": [
+        "284",
+        0
+      ]
+    },
+    "class_type": "LLM",
+    "_meta": {
+      "title": "☁️API LLM通用链路- 上游"
+    }
+  },
+  "63": {
+    "inputs": {
+      "ckpt_name": "SDXL\\waiIllustriousSDXL_v150.safetensors",
+      "+": null
+    },
+    "class_type": "CheckpointLoaderSimple",
+    "_meta": {
+      "title": "Checkpoint加载器（简易）"
+    }
+  },
+  "64": {
+    "inputs": {
+      "text": [
+        "29",
+        0
+      ],
+      "clip": [
+        "63",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP文本编码"
+    }
+  },
+  "65": {
+    "inputs": {
+      "text": "text,bad quality,NSFW",
+      "clip": [
+        "63",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP文本编码"
+    }
+  },
+  "66": {
+    "inputs": {
+      "seed": 444823056359844,
+      "steps": 45,
+      "cfg": 6.8,
+      "sampler_name": "dpmpp_2m_sde_heun_gpu",
+      "scheduler": "karras",
+      "denoise": 1,
+      "model": [
+        "63",
+        0
+      ],
+      "positive": [
+        "64",
+        0
+      ],
+      "negative": [
+        "65",
+        0
+      ],
+      "latent_image": [
+        "67",
+        0
+      ]
+    },
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "K采样器"
+    }
+  },
+  "67": {
+    "inputs": {
+      "width": 512,
+      "height": 768,
+      "batch_size": 1
+    },
+    "class_type": "EmptyLatentImage",
+    "_meta": {
+      "title": "空Latent图像"
+    }
+  },
+  "69": {
+    "inputs": {
+      "samples": [
+        "66",
+        0
+      ],
+      "vae": [
+        "63",
+        2
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE解码"
+    }
+  },
+  "70": {
+    "inputs": {
+      "images": [
+        "69",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "预览图像"
+    }
+  },
+  "81": {
+    "inputs": {
+      "model_name": "qwen3:4b-instruct",
+      "base_url": "http://192.168.1.109:11434/v1",
+      "api_key": "",
+      "is_ollama": true
+    },
+    "class_type": "LLM_api_loader",
+    "_meta": {
+      "title": "API LLM加载器"
+    }
+  },
+  "82": {
+    "inputs": {
+      "text_0": "设计美感总结：自然疗愈感主导，强调柔和有机的视觉语言、温暖平和的情绪基调（秋日余晖的暖调），核心隐喻为稻穗的弯曲象征心理韧性——弯曲中蕴含力量而非脆弱，传递内在平静与微小希望，避免任何工业感或激烈情绪表达。  \n画布分辨率：1024×1024  \n\nBest quality - Reason: 确保高保真输出，清晰传达心理疗愈的细腻情绪，避免模糊干扰用户信任感。  \nMasterpiece - Reason: 突出艺术高度，契合心理疗愈主题的深度表达需求，强化海报的沉浸式治愈效果。  \nUltra high res - Reason: 严格匹配1024×1024分辨率，保留稻穗细节以增强视觉冲击力与情感共鸣。  \nSoft natural light - Reason: 创造柔和漫射光效，消除阴影锐度，直接呼应秋日余晖的温暖安心感。  \nWarm golden tones - Reason: 精准对应浅米色（#F5D5A6）的暖调，传递安全感而非刺眼刺激，降低心理防御。  \nGentle rice stalks curvature - Reason: 直接体现“弯曲中坚韧”的核心隐喻，避免僵硬线条，强化心理韧性可视化。  \nPsychological resilience - Reason: 聚焦主题内核，确保图像传递克服挑战的积极信号，而非消极暗示。  \nInner peace - Reason: 作为情感锚点，引导用户进入舒缓状态，契合疗愈场景的即时平静需求。  \nSubtle hope - Reason: 用微小光点或光影暗示，避免过度直白，维持希望的自然流动性与可持续性。  \nOrganic textures - Reason: 强调自然非工业质感，减少机械感，增强画面呼吸感与疗愈亲和力。  \nPeaceful atmosphere - Reason: 指向整体情绪场域，消除紧张元素，为心理恢复营造安全空间。  \nFlowing lines - Reason: 模拟稻穗风中轻盈动态，避免静态单调，注入柔和运动韵律提升沉浸感。  \nCalm color palette - Reason: 仅用暖中性调色，杜绝冷色冲突，确保视觉平静不引发情绪波动。  \nNo harsh shadows - Reason: 消除尖锐轮廓，防止焦虑联想，强化画面整体和谐性与疗愈连续性。  \nEmotional healing - Reason: 明确指向心理修复目标，避免抽象表述，确保用户直接受益。  \nGentle wind movement - Reason: 添加极细微动态，象征自然力量的轻柔介入，不破坏静态疗愈基调。  \nNature-inspired - Reason: 植根自然疗愈原理，强化生态安全感，避免人工干预的疏离感。  \nPositive energy impact - Reason: 保证图像主动激发愉悦感，避免被动接收，实现即时心理赋能效果。",
+      "text": [
+        "62",
+        0
+      ]
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
+    }
+  },
+  "84": {
+    "inputs": {
+      "model_name": "qwen3.5:2b-q4_K_M",
+      "base_url": "http://localhost:11434/v1",
+      "api_key": "",
+      "is_ollama": true
+    },
+    "class_type": "LLM_api_loader",
+    "_meta": {
+      "title": "API LLM加载器"
+    }
+  },
+  "85": {
+    "inputs": {
+      "model_name": "qwen3:4b-instruct",
+      "base_url": "http://localhost:11434/v1",
+      "api_key": "",
+      "is_ollama": true
+    },
+    "class_type": "LLM_api_loader",
+    "_meta": {
+      "title": "API LLM加载器"
+    }
+  },
+  "86": {
+    "inputs": {
+      "text_0": "**主标题方案**  \n\n字体大小：128px  \n字体选择：SmileySans-Oblique  \nRGB参数：#F5D5A6  \n文本位置：居中垂直对齐，水平居中，略微偏上以留出下方稻穗动态空间，确保文字与稻穗意象自然融合，形成“弯曲中生长”的视觉呼吸感。",
+      "text": [
+        "33",
+        0
+      ]
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
+    }
+  },
+  "87": {
+    "inputs": {
+      "model_name": "qwen3:4b-instruct",
+      "base_url": "http://localhost:11434/v1",
+      "api_key": "",
+      "is_ollama": true
+    },
+    "class_type": "LLM_api_loader",
+    "_meta": {
+      "title": "API LLM加载器"
+    }
+  },
+  "88": {
+    "inputs": {
+      "model_name": "qwen3:4b-instruct",
+      "base_url": "http://localhost:11434/v1",
+      "api_key": "",
+      "is_ollama": true
+    },
+    "class_type": "LLM_api_loader",
+    "_meta": {
+      "title": "API LLM加载器"
+    }
+  },
+  "89": {
+    "inputs": {
+      "model_name": "qwen3-vl:2b",
+      "base_url": "http://localhost:11434/v1",
+      "api_key": "",
+      "is_ollama": true
+    },
+    "class_type": "LLM_api_loader",
+    "_meta": {
+      "title": "API LLM加载器"
+    }
+  },
+  "90": {
+    "inputs": {
+      "model_name": "qwen3:4b-instruct",
+      "base_url": "http://localhost:11434/v1",
+      "api_key": "",
+      "is_ollama": true
+    },
+    "class_type": "LLM_api_loader",
+    "_meta": {
+      "title": "API LLM加载器"
+    }
+  },
+  "91": {
+    "inputs": {
+      "model_name": "qwen3:4b-instruct",
+      "base_url": "http://localhost:11434/v1",
+      "api_key": "",
+      "is_ollama": true
+    },
+    "class_type": "LLM_api_loader",
+    "_meta": {
+      "title": "API LLM加载器"
+    }
+  },
+  "92": {
+    "inputs": {
+      "text_0": "文字颜色R:190、G:170、B:160；  \n描边颜色：R:210、G:190、B:180。  \n\n【理由说明】  \n主标题使用 #F5D5A6（浅黄橙色）作为文字颜色，该色在视觉上明亮、温暖，具有自然生长的生机感，契合“稻穗生长”主题中的生命力与阳光感。其R、G、B通道值分别为190、170、160，属于中偏暖的黄橙色调，既不刺眼，又能突出文字主体，形成清晰可读的视觉锚点。  \n\n描边颜色采用 R:210、G:190、B:180，为浅米白偏黄的色调，比文字颜色更亮、更柔和，形成“轻盈轮廓”效果。该颜色在RGB空间中比文字颜色在R通道上增加20，G和B各增加20，整体偏暖且饱和度低，确保描边不抢夺文字主视觉，同时增强文字的立体感与层次，避免与文字颜色一致，符合“文字与描边不可一样”的要求。  \n\n三维参数均在1~255之间，符合标准RGB范围，且描边颜色在亮度和饱和度上均优于文字颜色，形成自然过渡的视觉呼吸感，与稻穗“弯曲中生长”的动态意象相呼应，增强整体画面的有机流动感。",
+      "text": [
+        "37",
+        0
+      ]
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
+    }
+  },
+  "94": {
+    "inputs": {
+      "system_prompt": "翻译成中文即可",
+      "user_prompt": [
+        "29",
+        0
+      ],
+      "temperature": 0.2,
+      "is_memory": "disable",
+      "is_tools_in_sys_prompt": "disable",
+      "is_locked": "disable",
+      "main_brain": "enable",
+      "max_length": 3456,
+      "imgbb_api_key": "",
+      "conversation_rounds": 1,
+      "historical_record": "",
+      "is_enable": true,
+      "model": [
+        "281",
+        0
+      ]
+    },
+    "class_type": "LLM",
+    "_meta": {
+      "title": "☁️API LLM通用链路-上游"
+    }
+  },
+  "95": {
+    "inputs": {
+      "text_0": "最佳品质，大师级作品，超高分辨率，柔和自然光线，温暖的金色色调，柔和的稻秆曲线，心理韧性，内心平静，细微的希望，有机质感，宁静氛围，流畅的线条",
+      "text": [
+        "94",
+        0
+      ]
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
+    }
+  },
+  "98": {
+    "inputs": {
+      "model_name": "qwen3:4b-instruct",
+      "base_url": "http://localhost:11434/v1",
+      "api_key": "",
+      "is_ollama": true
+    },
+    "class_type": "LLM_api_loader",
+    "_meta": {
+      "title": "API LLM加载器"
+    }
+  },
+  "99": {
+    "inputs": {
+      "model_name": "qwen3:4b-instruct",
+      "base_url": "http://localhost:11434/v1",
+      "api_key": "",
+      "is_ollama": true
+    },
+    "class_type": "LLM_api_loader",
+    "_meta": {
+      "title": "API LLM加载器"
+    }
+  },
+  "102": {
+    "inputs": {
+      "text": [
+        "3",
+        0
+      ]
+    },
+    "class_type": "str2int",
+    "_meta": {
+      "title": "字符串转整数"
+    }
+  },
+  "103": {
+    "inputs": {
+      "text": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "str2int",
+    "_meta": {
+      "title": "字符串转整数"
+    }
+  },
+  "106": {
+    "inputs": {
+      "model_name": "qwen3:4b-instruct",
+      "base_url": "http://localhost:11434/v1",
+      "api_key": "",
+      "is_ollama": true
+    },
+    "class_type": "LLM_api_loader",
+    "_meta": {
+      "title": "API LLM加载器"
+    }
+  },
+  "148": {
+    "inputs": {
+      "text": "",
+      "clip": [
+        "154",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP文本编码"
+    }
+  },
+  "149": {
+    "inputs": {
+      "images": [
+        "171",
+        5
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "预览图像"
+    }
+  },
+  "150": {
+    "inputs": {
+      "model_name": "sam_vit_b_01ec64.pth",
+      "device_mode": "AUTO"
+    },
+    "class_type": "SAMLoader",
+    "_meta": {
+      "title": "SAMLoader (Impact)"
+    }
+  },
+  "151": {
+    "inputs": {
+      "text": "",
+      "clip": [
+        "154",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP文本编码"
+    }
+  },
+  "152": {
+    "inputs": {
+      "images": [
+        "171",
+        2
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "预览图像"
+    }
+  },
+  "153": {
+    "inputs": {
+      "model_name": "segm/person_yolov8m-seg.pt"
+    },
+    "class_type": "UltralyticsDetectorProvider",
+    "_meta": {
+      "title": "UltralyticsDetectorProvider"
+    }
+  },
+  "154": {
+    "inputs": {
+      "ckpt_name": "Pony\\cyberrealisticPony_v140.safetensors",
+      "+": null
+    },
+    "class_type": "CheckpointLoaderSimple",
+    "_meta": {
+      "title": "Checkpoint加载器（简易）"
+    }
+  },
+  "155": {
+    "inputs": {
+      "model_name": "segm/person_yolov8m-seg.pt"
+    },
+    "class_type": "UltralyticsDetectorProvider",
+    "_meta": {
+      "title": "UltralyticsDetectorProvider"
+    }
+  },
+  "156": {
+    "inputs": {
+      "ckpt_name": "Pony\\cyberrealisticPony_v140.safetensors",
+      "+": null
+    },
+    "class_type": "CheckpointLoaderSimple",
+    "_meta": {
+      "title": "Checkpoint加载器（简易）"
+    }
+  },
+  "157": {
+    "inputs": {
+      "padding": 0,
+      "blur": 0,
+      "mask": [
+        "171",
+        3
+      ]
+    },
+    "class_type": "MaskBoundingBox+",
+    "_meta": {
+      "title": "🔧 Mask Bounding Box"
+    }
+  },
+  "158": {
+    "inputs": {
+      "images": [
+        "171",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "预览图像"
+    }
+  },
+  "160": {
+    "inputs": {
+      "images": [
+        "171",
+        1
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "预览图像"
+    }
+  },
+  "161": {
+    "inputs": {
+      "images": [
+        "163",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "预览图像"
+    }
+  },
+  "162": {
+    "inputs": {
+      "delimiter": "",
+      "clean_whitespace": "true",
+      "text_a": [
+        "170",
+        0
+      ],
+      "text_b": [
+        "164",
+        0
+      ],
+      "text_c": [
+        "165",
+        0
+      ],
+      "text_d": [
+        "166",
+        0
+      ]
+    },
+    "class_type": "Text Concatenate",
+    "_meta": {
+      "title": "Text Concatenate"
+    }
+  },
+  "163": {
+    "inputs": {
+      "mask": [
+        "171",
+        3
+      ]
+    },
+    "class_type": "MaskToImage",
+    "_meta": {
+      "title": "遮罩转换为图像"
+    }
+  },
+  "164": {
+    "inputs": {
+      "text": "0~0",
+      "anything": [
+        "157",
+        6
+      ]
+    },
+    "class_type": "easy showAnything",
+    "_meta": {
+      "title": "展示任何"
+    }
+  },
+  "165": {
+    "inputs": {
+      "input_text": "，y轴的禁区范围："
+    },
+    "class_type": "TextShow",
+    "_meta": {
+      "title": "TextShow"
+    }
+  },
+  "166": {
+    "inputs": {
+      "text": "0~0",
+      "anything": [
+        "157",
+        7
+      ]
+    },
+    "class_type": "easy showAnything",
+    "_meta": {
+      "title": "展示任何"
+    }
+  },
+  "167": {
+    "inputs": {
+      "delimiter": "",
+      "clean_whitespace": "true",
+      "text_a": [
+        "174",
+        0
+      ],
+      "text_b": [
+        "168",
+        0
+      ],
+      "text_c": [
+        "169",
+        0
+      ],
+      "text_d": [
+        "172",
+        0
+      ]
+    },
+    "class_type": "Text Concatenate",
+    "_meta": {
+      "title": "Text Concatenate"
+    }
+  },
+  "168": {
+    "inputs": {
+      "text": "512",
+      "anything": [
+        "173",
+        0
+      ]
+    },
+    "class_type": "easy showAnything",
+    "_meta": {
+      "title": "展示任何"
+    }
+  },
+  "169": {
+    "inputs": {
+      "input_text": "×"
+    },
+    "class_type": "TextShow",
+    "_meta": {
+      "title": "TextShow"
+    }
+  },
+  "170": {
+    "inputs": {
+      "input_text": "。x轴的禁区范围："
+    },
+    "class_type": "TextShow",
+    "_meta": {
+      "title": "TextShow"
+    }
+  },
+  "171": {
+    "inputs": {
+      "guide_size": 512,
+      "guide_size_for": false,
+      "max_size": 1024,
+      "seed": 1082039478571737,
+      "steps": 20,
+      "cfg": 3,
+      "sampler_name": "euler_ancestral",
+      "scheduler": "sgm_uniform",
+      "denoise": 0.4000000000000001,
+      "feather": 5,
+      "noise_mask": true,
+      "force_inpaint": true,
+      "bbox_threshold": 0.6000000000000001,
+      "bbox_dilation": 15,
+      "bbox_crop_factor": 1.5,
+      "sam_detection_hint": "center-1",
+      "sam_dilation": 0,
+      "sam_threshold": 0.93,
+      "sam_bbox_expansion": 0,
+      "sam_mask_hint_threshold": 0.7,
+      "sam_mask_hint_use_negative": "False",
+      "drop_size": 10,
+      "wildcard": "",
+      "cycle": 1,
+      "inpaint_model": false,
+      "noise_mask_feather": 20,
+      "tiled_encode": false,
+      "tiled_decode": false,
+      "image": [
+        "69",
+        0
+      ],
+      "model": [
+        "156",
+        0
+      ],
+      "clip": [
+        "156",
+        1
+      ],
+      "vae": [
+        "156",
+        2
+      ],
+      "positive": [
+        "151",
+        0
+      ],
+      "negative": [
+        "148",
+        0
+      ],
+      "bbox_detector": [
+        "153",
+        0
+      ],
+      "segm_detector_opt": [
+        "155",
+        1
+      ]
+    },
+    "class_type": "FaceDetailer",
+    "_meta": {
+      "title": "FaceDetailer"
+    }
+  },
+  "172": {
+    "inputs": {
+      "text": "768",
+      "anything": [
+        "173",
+        1
+      ]
+    },
+    "class_type": "easy showAnything",
+    "_meta": {
+      "title": "展示任何"
+    }
+  },
+  "173": {
+    "inputs": {
+      "image": [
+        "69",
+        0
+      ]
+    },
+    "class_type": "GetImageSize+",
+    "_meta": {
+      "title": "🔧 Get Image Size"
+    }
+  },
+  "174": {
+    "inputs": {
+      "input_text": "图像像素的尺寸:"
+    },
+    "class_type": "TextShow",
+    "_meta": {
+      "title": "TextShow"
+    }
+  },
+  "176": {
+    "inputs": {
+      "images": [
+        "157",
+        1
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "预览图像"
+    }
+  },
+  "180": {
+    "inputs": {
+      "text_0": "ComfyUI文字位置适配分析设计师，根据画面像素分析x、y准确整数值，文字放置在哪比较合适并给出理由，无Markdown格式。禁区范围内不可放置，如果参数为0~0或全尺寸禁区，则无视该数据。图像像素的尺寸:512×768。x轴的禁区范围：0~0，y轴的禁区范围：0~0",
+      "text": [
+        "186",
+        0
+      ]
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
+    }
+  },
+  "181": {
+    "inputs": {
+      "text_0": "图像像素的尺寸:512×768",
+      "text": [
+        "167",
+        0
+      ]
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
+    }
+  },
+  "182": {
+    "inputs": {
+      "text_0": "。x轴的禁区范围：0~0，y轴的禁区范围：0~0",
+      "text": [
+        "162",
+        0
+      ]
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
+    }
+  },
+  "183": {
+    "inputs": {
+      "string_a": [
+        "181",
+        0
+      ],
+      "string_b": [
+        "182",
+        0
+      ],
+      "delimiter": ""
+    },
+    "class_type": "StringConcatenate",
+    "_meta": {
+      "title": "连接"
+    }
+  },
+  "184": {
+    "inputs": {
+      "input_text": "ComfyUI文字位置适配分析设计师，根据画面像素分析x、y准确整数值，文字放置在哪比较合适并给出理由，无Markdown格式。禁区范围内不可放置，如果参数为0~0或全尺寸禁区，则无视该数据。"
+    },
+    "class_type": "TextShow",
+    "_meta": {
+      "title": "TextShow"
+    }
+  },
+  "185": {
+    "inputs": {
+      "text_0": "图像像素的尺寸:512×768。x轴的禁区范围：0~0，y轴的禁区范围：0~0",
+      "text": [
+        "183",
+        0
+      ]
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
+    }
+  },
+  "186": {
+    "inputs": {
+      "string_a": [
+        "184",
+        0
+      ],
+      "string_b": [
+        "185",
+        0
+      ],
+      "delimiter": ""
+    },
+    "class_type": "StringConcatenate",
+    "_meta": {
+      "title": "连接"
+    }
+  },
+  "192": {
+    "inputs": {
+      "cond": false
+    },
+    "class_type": "ImpactConditionalBranch",
+    "_meta": {
+      "title": "ImpactConditionalBranch"
+    }
+  },
+  "204": {
+    "inputs": {},
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "预览图像"
+    }
+  },
+  "206": {
+    "inputs": {
+      "text_0": "[\n    [\n        {\n            \"bounding_box\": {\n                \"top_left\": [\n                    11,\n                    132\n                ],\n                \"top_right\": [\n                    416,\n                    132\n                ],\n                \"bottom_right\": [\n                    416,\n                    285\n                ],\n                \"bottom_left\": [\n                    11,\n                    285\n                ]\n            },\n            \"text\": \"i%骺向\",\n            \"confidence\": 2.028616336247069e-06\n        },\n        {\n            \"bounding_box\": {\n                \"top_left\": [\n                    16,\n                    272\n                ],\n                \"top_right\": [\n                    200,\n                    272\n                ],\n                \"bottom_right\": [\n                    200,\n                    398\n                ],\n                \"bottom_left\": [\n                    16,\n                    398\n                ]\n            },\n            \"text\": \"刃\",\n            \"confidence\": 0.002637904313209427\n        },\n        {\n            \"bounding_box\": {\n                \"top_left\": [\n                    202,\n                    274\n                ],\n                \"top_right\": [\n                    500,\n                    274\n                ],\n                \"bottom_right\": [\n                    500,\n                    398\n                ],\n                \"bottom_left\": [\n                    202,\n                    398\n                ]\n            },\n            \"text\": \"@啷爪\",\n            \"confidence\": 0.00017729965097836283\n        },\n        {\n            \"bounding_box\": {\n                \"top_left\": [\n                    20,\n                    400\n                ],\n                \"top_right\": [\n                    148,\n                    400\n                ],\n                \"bottom_right\": [\n                    148,\n                    522\n                ],\n                \"bottom_left\": [\n                    20,\n                    522\n                ]\n            },\n            \"text\": \"07\",\n            \"confidence\": 0.01572463484768324\n        },\n        {\n            \"bounding_box\": {\n                \"top_left\": [\n                    18,\n                    521\n                ],\n                \"top_right\": [\n                    493,\n                    521\n                ],\n                \"bottom_right\": [\n                    493,\n                    651\n                ],\n                \"bottom_left\": [\n                    18,\n                    651\n                ]\n            },\n            \"text\": \"刚RE6%@\",\n            \"confidence\": 0.0024883575526777565\n        }\n    ]\n]"
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
+    }
+  },
+  "207": {
+    "inputs": {
+      "system_prompt": "寻找描边颜色，输出该R通道的整数参数即可！不要输出其他内容！",
+      "user_prompt": [
+        "37",
+        0
+      ],
+      "temperature": 0,
+      "is_memory": "disable",
+      "is_tools_in_sys_prompt": "enable",
+      "is_locked": "disable",
+      "main_brain": "disable",
+      "max_length": 3072,
+      "imgbb_api_key": "",
+      "conversation_rounds": 1,
+      "historical_record": "",
+      "is_enable": true,
+      "model": [
+        "210",
+        0
+      ]
+    },
+    "class_type": "LLM",
+    "_meta": {
+      "title": "☁️API LLM通用链路r-下游MY"
+    }
+  },
+  "208": {
+    "inputs": {
+      "system_prompt": "寻找描边颜色，输出该G通道的整数参数即可！不要输出其他内容！",
+      "user_prompt": [
+        "37",
+        0
+      ],
+      "temperature": 0,
+      "is_memory": "disable",
+      "is_tools_in_sys_prompt": "enable",
+      "is_locked": "disable",
+      "main_brain": "disable",
+      "max_length": 3072,
+      "imgbb_api_key": "",
+      "conversation_rounds": 1,
+      "historical_record": "",
+      "is_enable": true,
+      "model": [
+        "211",
+        0
+      ]
+    },
+    "class_type": "LLM",
+    "_meta": {
+      "title": "☁️API LLM通用链路r-下游MY"
+    }
+  },
+  "209": {
+    "inputs": {
+      "system_prompt": "寻找描边颜色，输出该B通道的整数参数即可！不要输出其他内容！",
+      "user_prompt": [
+        "37",
+        0
+      ],
+      "temperature": 0,
+      "is_memory": "disable",
+      "is_tools_in_sys_prompt": "enable",
+      "is_locked": "disable",
+      "main_brain": "disable",
+      "max_length": 3072,
+      "imgbb_api_key": "",
+      "conversation_rounds": 1,
+      "historical_record": "",
+      "is_enable": true,
+      "model": [
+        "212",
+        0
+      ]
+    },
+    "class_type": "LLM",
+    "_meta": {
+      "title": "☁️API LLM通用链路r-下游MY"
+    }
+  },
+  "210": {
+    "inputs": {
+      "model_name": "qwen3:4b-instruct",
+      "base_url": "http://localhost:11434/v1",
+      "api_key": "",
+      "is_ollama": true
+    },
+    "class_type": "LLM_api_loader",
+    "_meta": {
+      "title": "API LLM加载器"
+    }
+  },
+  "211": {
+    "inputs": {
+      "model_name": "qwen3:4b-instruct",
+      "base_url": "http://localhost:11434/v1",
+      "api_key": "",
+      "is_ollama": true
+    },
+    "class_type": "LLM_api_loader",
+    "_meta": {
+      "title": "API LLM加载器"
+    }
+  },
+  "212": {
+    "inputs": {
+      "model_name": "qwen3:4b-instruct",
+      "base_url": "http://localhost:11434/v1",
+      "api_key": "",
+      "is_ollama": true
+    },
+    "class_type": "LLM_api_loader",
+    "_meta": {
+      "title": "API LLM加载器"
+    }
+  },
+  "213": {
+    "inputs": {
+      "text_0": "210",
+      "text": [
+        "207",
+        0
+      ]
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
+    }
+  },
+  "214": {
+    "inputs": {
+      "text_0": "190",
+      "text": [
+        "208",
+        0
+      ]
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
+    }
+  },
+  "215": {
+    "inputs": {
+      "text_0": "180",
+      "text": [
+        "209",
+        0
+      ]
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
+    }
+  },
+  "216": {
+    "inputs": {
+      "text": [
+        "213",
+        0
+      ]
+    },
+    "class_type": "str2int",
+    "_meta": {
+      "title": "字符串转整数R"
+    }
+  },
+  "217": {
+    "inputs": {
+      "text": [
+        "214",
+        0
+      ]
+    },
+    "class_type": "str2int",
+    "_meta": {
+      "title": "字符串转整数G"
+    }
+  },
+  "218": {
+    "inputs": {
+      "text": [
+        "215",
+        0
+      ]
+    },
+    "class_type": "str2int",
+    "_meta": {
+      "title": "字符串转整数B"
+    }
+  },
+  "224": {
+    "inputs": {
+      "text_0": "{\n    \"English\": \"en\",\n    \"简体中文\": \"ch_sim\",\n    \"繁體中文\": \"ch_tra\",\n    \"العربية\": \"ar\",\n    \"Azərbaycan\": \"az\",\n    \"Euskal\": \"eu\",\n    \"Bosanski\": \"bs\",\n    \"Български\": \"bg\",\n    \"Català\": \"ca\",\n    \"Hrvatski\": \"hr\",\n    \"Čeština\": \"cs\",\n    \"Dansk\": \"da\",\n    \"Nederlands\": \"nl\",\n    \"Eesti\": \"et\",\n    \"Suomi\": \"fi\",\n    \"Français\": \"fr\",\n    \"Galego\": \"gl\",\n    \"Deutsch\": \"de\",\n    \"Ελληνικά\": \"el\",\n    \"עברית\": \"he\",\n    \"हिन्दी\": \"hi\",\n    \"Magyar\": \"hu\",\n    \"Íslenska\": \"is\",\n    \"Indonesia\": \"id\",\n    \"Italiano\": \"it\",\n    \"日本語\": \"ja\",\n    \"한국어\": \"ko\",\n    \"Latviešu\": \"lv\",\n    \"Lietuvių\": \"lt\",\n    \"Македонски\": \"mk\",\n    \"Norsk\": \"no\",\n    \"Polski\": \"pl\",\n    \"Português\": \"pt\",\n    \"Română\": \"ro\",\n    \"Русский\": \"ru\",\n    \"Српски\": \"sr\",\n    \"Slovenčina\": \"sk\",\n    \"Slovenščina\": \"sl\",\n    \"Español\": \"es\",\n    \"Svenska\": \"sv\",\n    \"ไทย\": \"th\",\n    \"Türkçe\": \"tr\",\n    \"Українська\": \"uk\",\n    \"Tiếng Việt\": \"vi\"\n}"
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
+    }
+  },
+  "225": {
+    "inputs": {
+      "filename_prefix": "ComfyUI",
+      "images": [
+        "19",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "保存图像"
+    }
+  },
+  "228": {
+    "inputs": {
+      "model_name": "qwen3.5:2b-q4_K_M",
+      "base_url": "http://localhost:11434/v1",
+      "api_key": "",
+      "is_ollama": true
+    },
+    "class_type": "LLM_api_loader",
+    "_meta": {
+      "title": "API LLM加载器"
+    }
+  },
+  "234": {
+    "inputs": {
+      "system_prompt": "翻译成中文即可",
+      "user_prompt": [
+        "82",
+        0
+      ],
+      "temperature": 0.2,
+      "is_memory": "disable",
+      "is_tools_in_sys_prompt": "disable",
+      "is_locked": "disable",
+      "main_brain": "enable",
+      "max_length": 3456,
+      "imgbb_api_key": "",
+      "conversation_rounds": 1,
+      "historical_record": "",
+      "is_enable": true,
+      "model": [
+        "283",
+        0
+      ]
+    },
+    "class_type": "LLM",
+    "_meta": {
+      "title": "☁️API LLM通用链路-上游"
+    }
+  },
+  "236": {
+    "inputs": {
+      "text_0": "设计美感总结：以自然疗愈感为核心，强调柔和有机的视觉语言与温暖平和的情绪基调（秋日余晖的暖调）。核心隐喻为稻穗的微弯形态——象征心理韧性：弯曲中蕴含力量而非脆弱，传递内在平静与微小希望，杜绝工业感及激烈情绪表达。  \n画布分辨率：1024×1024  \n\n最佳画质 - 原因：确保高保真输出，精准传递心理疗愈的细腻情绪，避免模糊干扰用户信任感。  \n杰作级 - 原因：突出艺术高度，深度契合心理疗愈主题的表达需求，强化海报沉浸式治愈效果。  \n超高清分辨率 - 原因：严格匹配1024×1024画布，保留稻穗细节以增强视觉冲击力与情感共鸣。  \n柔光自然照明 - 原因：营造柔和漫射光效，消除阴影锐度，直击秋日余晖的温暖安心感。  \n暖金色调 - 原因：精准对应浅米色（#F5D5A6）的暖调，传递安全感而非刺眼刺激，降低心理防御。  \n稻穗微弯弧度 - 原因：直观体现\"弯曲中蕴含力量\"的核心隐喻，避免僵硬线条，强化心理韧性的可视化表达。  \n心理韧性 - 原因：聚焦主题内核，确保图像传递克服挑战的积极信号，杜绝消极暗示。  \n内在平静 - 原因：作为情感锚点，引导用户进入舒缓状态，契合疗愈场景的即时平静需求。  \n微小希望 - 原因：以细微光点或光影暗示，避免过度直白，维持希望的自然流动性与可持续性。  \n有机质感 - 原因：强调自然非工业质感，减少机械感，增强画面呼吸感与疗愈亲和力。  \n宁静氛围 - 原因：构建整体情绪场域，消除紧张元素，为心理恢复营造安全空间。  \n轻盈动态线条 - 原因：模拟稻穗风中轻盈律动，避免静态单调，注入柔和运动韵律提升沉浸感。  \n暖中性色系 - 原因：仅用暖调色谱，杜绝冷色冲突，确保视觉平静不引发情绪波动。  \n无尖锐阴影 - 原因：消除锐利轮廓，避免焦虑联想，强化画面和谐性与疗愈连续性。  \n心理疗愈 - 原因：明确指向心理修复目标，杜绝抽象表述，确保用户直接受益。  \n微风轻动 - 原因：添加极细微动态，象征自然力量的轻柔介入，不破坏静态疗愈基调。  \n自然疗愈理念 - 原因：植根自然疗愈原理，强化生态安全感，避免人工干预的疏离感。  \n积极能量效应 - 原因：确保图像主动激发愉悦感，避免被动接收，实现即时心理赋能效果。",
+      "text": [
+        "234",
+        0
+      ]
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
+    }
+  },
+  "245": {
+    "inputs": {
+      "string_a": "你是一名资深艺术总监。请根据用户的需求进行综合考虑，不要markdown格式，按照以下步骤完成设计简报。\n\n第一步：需求分析 (Requirement Analysis)\n\n核心主题是什么？\n\n目标受众是谁？\n\n关键词和情绪板(Moodboard)是什么？\n\n第二步：版式决策 (Layout Decision)\n\n根据主题，选择一个最合适的版式模板（例如：居中聚焦版式、上下或左右构图、压角构图、对称构图）。\n\n解释你为什么这么选。\n\n第二步：色彩方案 (Color Palette)\n\n因为性能有限，只能选择一个主色，不要其他颜色。\n\n解释这个色彩方案如何传达核心情绪。\n\n第四步：字体选择 (Typography Selection)\n\n只为主标题选择一个合适的字体，不需要副标题等。\n\n目前字体支持：\nSmileySans-Oblique",
+      "string_b": "",
+      "delimiter": ""
+    },
+    "class_type": "StringConcatenate",
+    "_meta": {
+      "title": "连接"
+    }
+  },
+  "253": {
+    "inputs": {
+      "system_prompt": "画布的宽直接输出，不要其余的！例如1024×768，只输出1024",
+      "user_prompt": [
+        "275",
+        0
+      ],
+      "temperature": 0,
+      "is_memory": "disable",
+      "is_tools_in_sys_prompt": "disable",
+      "is_locked": "disable",
+      "main_brain": "enable",
+      "max_length": 4096,
+      "imgbb_api_key": "",
+      "conversation_rounds": 2,
+      "historical_record": "",
+      "is_enable": true,
+      "model": [
+        "286",
+        0
+      ]
+    },
+    "class_type": "LLM",
+    "_meta": {
+      "title": "☁️API LLM通用链路-总"
+    }
+  },
+  "255": {
+    "inputs": {
+      "system_prompt": "画布的高直接输出，不要其余的！例如1024×768，只输出768",
+      "user_prompt": [
+        "274",
+        0
+      ],
+      "temperature": 0,
+      "is_memory": "disable",
+      "is_tools_in_sys_prompt": "disable",
+      "is_locked": "disable",
+      "main_brain": "enable",
+      "max_length": 4096,
+      "imgbb_api_key": "",
+      "conversation_rounds": 2,
+      "historical_record": "",
+      "is_enable": true,
+      "model": [
+        "287",
+        0
+      ]
+    },
+    "class_type": "LLM",
+    "_meta": {
+      "title": "☁️API LLM通用链路-总"
+    }
+  },
+  "257": {
+    "inputs": {
+      "text": [
+        "262",
+        0
+      ]
+    },
+    "class_type": "str2int",
+    "_meta": {
+      "title": "字符串转整数-宽"
+    }
+  },
+  "258": {
+    "inputs": {
+      "text": [
+        "263",
+        0
+      ]
+    },
+    "class_type": "str2int",
+    "_meta": {
+      "title": "字符串转整数-高"
+    }
+  },
+  "262": {
+    "inputs": {
+      "text_0": "1024",
+      "text": [
+        "253",
+        0
+      ]
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
+    }
+  },
+  "263": {
+    "inputs": {
+      "text_0": "1024",
+      "text": [
+        "255",
+        0
+      ]
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
+    }
+  },
+  "266": {
+    "inputs": {
+      "model_name": "qwen3.5:2b-q4_K_M",
+      "base_url": "http://localhost:11434/v1",
+      "api_key": "",
+      "is_ollama": true
+    },
+    "class_type": "LLM_api_loader",
+    "_meta": {
+      "title": "API LLM加载器"
+    }
+  },
+  "267": {
+    "inputs": {
+      "model_name": "qwen3:4b-instruct",
+      "base_url": "http://localhost:11434/v1",
+      "api_key": "",
+      "is_ollama": true
+    },
+    "class_type": "LLM_api_loader",
+    "_meta": {
+      "title": "API LLM加载器"
+    }
+  },
+  "268": {
+    "inputs": {
+      "model_name": "qwen3.5:2b-q4_K_M",
+      "base_url": "http://localhost:11434/v1",
+      "api_key": "",
+      "is_ollama": true
+    },
+    "class_type": "LLM_api_loader",
+    "_meta": {
+      "title": "API LLM加载器"
+    }
+  },
+  "269": {
+    "inputs": {
+      "model_name": "qwen3.5:2b-q4_K_M",
+      "base_url": "http://localhost:11434/v1",
+      "api_key": "",
+      "is_ollama": true
+    },
+    "class_type": "LLM_api_loader",
+    "_meta": {
+      "title": "API LLM加载器"
+    }
+  },
+  "271": {
+    "inputs": {
+      "model_name": "qwen3:4b-instruct",
+      "base_url": "http://localhost:11434/v1",
+      "api_key": "",
+      "is_ollama": true
+    },
+    "class_type": "LLM_api_loader",
+    "_meta": {
+      "title": "API LLM加载器"
+    }
+  },
+  "273": {
+    "inputs": {
+      "model_name": "qwen3.5:2b-q4_K_M",
+      "base_url": "http://localhost:11434/v1",
+      "api_key": "",
+      "is_ollama": true
+    },
+    "class_type": "LLM_api_loader",
+    "_meta": {
+      "title": "API LLM加载器"
+    }
+  },
+  "274": {
+    "inputs": {
+      "text_0": "设计美感总结：自然疗愈感主导，强调柔和有机的视觉语言、温暖平和的情绪基调（秋日余晖的暖调），核心隐喻为稻穗的弯曲象征心理韧性——弯曲中蕴含力量而非脆弱，传递内在平静与微小希望，避免任何工业感或激烈情绪表达。  \n画布分辨率：1024×1024  \n\nBest quality - Reason: 确保高保真输出，清晰传达心理疗愈的细腻情绪，避免模糊干扰用户信任感。  \nMasterpiece - Reason: 突出艺术高度，契合心理疗愈主题的深度表达需求，强化海报的沉浸式治愈效果。  \nUltra high res - Reason: 严格匹配1024×1024分辨率，保留稻穗细节以增强视觉冲击力与情感共鸣。  \nSoft natural light - Reason: 创造柔和漫射光效，消除阴影锐度，直接呼应秋日余晖的温暖安心感。  \nWarm golden tones - Reason: 精准对应浅米色（#F5D5A6）的暖调，传递安全感而非刺眼刺激，降低心理防御。  \nGentle rice stalks curvature - Reason: 直接体现“弯曲中坚韧”的核心隐喻，避免僵硬线条，强化心理韧性可视化。  \nPsychological resilience - Reason: 聚焦主题内核，确保图像传递克服挑战的积极信号，而非消极暗示。  \nInner peace - Reason: 作为情感锚点，引导用户进入舒缓状态，契合疗愈场景的即时平静需求。  \nSubtle hope - Reason: 用微小光点或光影暗示，避免过度直白，维持希望的自然流动性与可持续性。  \nOrganic textures - Reason: 强调自然非工业质感，减少机械感，增强画面呼吸感与疗愈亲和力。  \nPeaceful atmosphere - Reason: 指向整体情绪场域，消除紧张元素，为心理恢复营造安全空间。  \nFlowing lines - Reason: 模拟稻穗风中轻盈动态，避免静态单调，注入柔和运动韵律提升沉浸感。  \nCalm color palette - Reason: 仅用暖中性调色，杜绝冷色冲突，确保视觉平静不引发情绪波动。  \nNo harsh shadows - Reason: 消除尖锐轮廓，防止焦虑联想，强化画面整体和谐性与疗愈连续性。  \nEmotional healing - Reason: 明确指向心理修复目标，避免抽象表述，确保用户直接受益。  \nGentle wind movement - Reason: 添加极细微动态，象征自然力量的轻柔介入，不破坏静态疗愈基调。  \nNature-inspired - Reason: 植根自然疗愈原理，强化生态安全感，避免人工干预的疏离感。  \nPositive energy impact - Reason: 保证图像主动激发愉悦感，避免被动接收，实现即时心理赋能效果。",
+      "text": [
+        "62",
+        0
+      ]
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
+    }
+  },
+  "275": {
+    "inputs": {
+      "text_0": "设计美感总结：自然疗愈感主导，强调柔和有机的视觉语言、温暖平和的情绪基调（秋日余晖的暖调），核心隐喻为稻穗的弯曲象征心理韧性——弯曲中蕴含力量而非脆弱，传递内在平静与微小希望，避免任何工业感或激烈情绪表达。  \n画布分辨率：1024×1024  \n\nBest quality - Reason: 确保高保真输出，清晰传达心理疗愈的细腻情绪，避免模糊干扰用户信任感。  \nMasterpiece - Reason: 突出艺术高度，契合心理疗愈主题的深度表达需求，强化海报的沉浸式治愈效果。  \nUltra high res - Reason: 严格匹配1024×1024分辨率，保留稻穗细节以增强视觉冲击力与情感共鸣。  \nSoft natural light - Reason: 创造柔和漫射光效，消除阴影锐度，直接呼应秋日余晖的温暖安心感。  \nWarm golden tones - Reason: 精准对应浅米色（#F5D5A6）的暖调，传递安全感而非刺眼刺激，降低心理防御。  \nGentle rice stalks curvature - Reason: 直接体现“弯曲中坚韧”的核心隐喻，避免僵硬线条，强化心理韧性可视化。  \nPsychological resilience - Reason: 聚焦主题内核，确保图像传递克服挑战的积极信号，而非消极暗示。  \nInner peace - Reason: 作为情感锚点，引导用户进入舒缓状态，契合疗愈场景的即时平静需求。  \nSubtle hope - Reason: 用微小光点或光影暗示，避免过度直白，维持希望的自然流动性与可持续性。  \nOrganic textures - Reason: 强调自然非工业质感，减少机械感，增强画面呼吸感与疗愈亲和力。  \nPeaceful atmosphere - Reason: 指向整体情绪场域，消除紧张元素，为心理恢复营造安全空间。  \nFlowing lines - Reason: 模拟稻穗风中轻盈动态，避免静态单调，注入柔和运动韵律提升沉浸感。  \nCalm color palette - Reason: 仅用暖中性调色，杜绝冷色冲突，确保视觉平静不引发情绪波动。  \nNo harsh shadows - Reason: 消除尖锐轮廓，防止焦虑联想，强化画面整体和谐性与疗愈连续性。  \nEmotional healing - Reason: 明确指向心理修复目标，避免抽象表述，确保用户直接受益。  \nGentle wind movement - Reason: 添加极细微动态，象征自然力量的轻柔介入，不破坏静态疗愈基调。  \nNature-inspired - Reason: 植根自然疗愈原理，强化生态安全感，避免人工干预的疏离感。  \nPositive energy impact - Reason: 保证图像主动激发愉悦感，避免被动接收，实现即时心理赋能效果。",
+      "text": [
+        "62",
+        0
+      ]
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
+    }
+  },
+  "276": {
+    "inputs": {
+      "model_name": "qwen3:4b-instruct",
+      "base_url": "http://localhost:11434/v1",
+      "api_key": "",
+      "is_ollama": true
+    },
+    "class_type": "LLM_api_loader",
+    "_meta": {
+      "title": "API LLM加载器"
+    }
+  },
+  "277": {
+    "inputs": {
+      "model_name": "qwen3:4b-instruct",
+      "base_url": "http://localhost:11434/v1",
+      "api_key": "",
+      "is_ollama": true
+    },
+    "class_type": "LLM_api_loader",
+    "_meta": {
+      "title": "API LLM加载器"
+    }
+  },
+  "278": {
+    "inputs": {
+      "model_name": "qwen3:4b-instruct",
+      "base_url": "http://localhost:11434/v1",
+      "api_key": "",
+      "is_ollama": true
+    },
+    "class_type": "LLM_api_loader",
+    "_meta": {
+      "title": "API LLM加载器"
+    }
+  },
+  "281": {
+    "inputs": {
+      "model_name": "qwen3:4b-instruct",
+      "base_url": "http://localhost:11434/v1",
+      "api_key": "",
+      "is_ollama": true
+    },
+    "class_type": "LLM_api_loader",
+    "_meta": {
+      "title": "API LLM加载器"
+    }
+  },
+  "282": {
+    "inputs": {
+      "model_name": "qwen3:4b",
+      "base_url": "http://localhost:11434/v1",
+      "api_key": "",
+      "is_ollama": true
+    },
+    "class_type": "LLM_api_loader",
+    "_meta": {
+      "title": "API LLM加载器"
+    }
+  },
+  "283": {
+    "inputs": {
+      "model_name": "qwen3:4b",
+      "base_url": "http://localhost:11434/v1",
+      "api_key": "",
+      "is_ollama": true
+    },
+    "class_type": "LLM_api_loader",
+    "_meta": {
+      "title": "API LLM加载器"
+    }
+  },
+  "284": {
+    "inputs": {
+      "model_name": "qwen3:4b",
+      "base_url": "http://localhost:11434/v1",
+      "api_key": "",
+      "is_ollama": true
+    },
+    "class_type": "LLM_api_loader",
+    "_meta": {
+      "title": "API LLM加载器"
+    }
+  },
+  "285": {
+    "inputs": {
+      "model_name": "qwen3:4b",
+      "base_url": "http://localhost:11434/v1",
+      "api_key": "",
+      "is_ollama": true
+    },
+    "class_type": "LLM_api_loader",
+    "_meta": {
+      "title": "API LLM加载器"
+    }
+  },
+  "286": {
+    "inputs": {
+      "model_name": "qwen3:4b",
+      "base_url": "http://192.168.31.249:11434/v1",
+      "api_key": "",
+      "is_ollama": true
+    },
+    "class_type": "LLM_api_loader",
+    "_meta": {
+      "title": "API LLM加载器"
+    }
+  },
+  "287": {
+    "inputs": {
+      "model_name": "qwen3:4b",
+      "base_url": "http://192.168.31.249:11434/v1",
+      "api_key": "",
+      "is_ollama": true
+    },
+    "class_type": "LLM_api_loader",
+    "_meta": {
+      "title": "API LLM加载器"
+    }
+  },
+  "288": {
+    "inputs": {
+      "model_name": "qwen3:4b",
+      "base_url": "http://192.168.31.249:11434/v1",
+      "api_key": "",
+      "is_ollama": true
+    },
+    "class_type": "LLM_api_loader",
+    "_meta": {
+      "title": "API LLM加载器"
+    }
+  },
+  "289": {
+    "inputs": {
+      "model_name": "qwen3:4b",
+      "base_url": "http://192.168.31.249:11434/v1",
+      "api_key": "",
+      "is_ollama": true
+    },
+    "class_type": "LLM_api_loader",
+    "_meta": {
+      "title": "API LLM加载器"
+    }
+  }
+}
