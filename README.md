@@ -1,5 +1,9 @@
 This directory contains ComfyUI workflow files and custom node implementations for poster automation and text overlay functionality.
 
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/f6703170-a6b0-4b1f-8b4e-848a4282273e" />
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/97f97139-61df-4849-bfee-573de4ac139c" />
+<img width="256" height="384" alt="image" src="https://github.com/user-attachments/assets/b855ba1a-d483-41d9-9738-8035d15170aa" />
+
 > **Note**: These are demo/study copies for learning and reference purposes.
 
 ## Files Overview
