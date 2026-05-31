@@ -2,6 +2,11 @@
 
 本目录包含用于海报自动化生成和文字叠加功能的 ComfyUI 工作流文件及自定义节点实现。
 
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/f6703170-a6b0-4b1f-8b4e-848a4282273e" />
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/97f97139-61df-4849-bfee-573de4ac139c" />
+<img width="256" height="384" alt="image" src="https://github.com/user-attachments/assets/b855ba1a-d483-41d9-9738-8035d15170aa" />
+
+
 > **注意**: 这些文件为演示/学习副本，仅供学习和参考使用。
 
 ## 文件概览
