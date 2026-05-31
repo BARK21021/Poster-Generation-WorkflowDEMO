@@ -307,7 +307,6 @@ my display/
 ├── FL_TextOverlay_Enhanced.py                           # Enhanced version with advanced features
 ├── Local_Knowledge_Enhanced_LLM_Poster_Automation_Framework.json    # Main workflow
 ├── Local_Knowledge_Enhanced_LLM_Poster_Automation_Framework_Copy.json # Backup workflow
-├── 22403020130_肖金鹏_.pdf                               # Research report (63 pages)
 └── README.md                                             # This documentation file
 ```
 
