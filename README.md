@@ -1,5 +1,3 @@
-# My Display - ComfyUI Resources Collection
-
 This directory contains ComfyUI workflow files and custom node implementations for poster automation and text overlay functionality.
 
 > **Note**: These are demo/study copies for learning and reference purposes.
